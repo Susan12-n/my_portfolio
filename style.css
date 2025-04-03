@@ -65,6 +65,7 @@ span{
     background-color:rgba(0, 0, 0, 0.952);
     width: 100;
     height: 100vh;
+    padding: 50px;
 }
 .home_image img{
     border-radius: 50%;
@@ -83,18 +84,27 @@ span{
 .heading1{
     line-height: 10px;
     letter-spacing: 1px;
+    padding: 30px;
 }
 .paragragh{
     font-size: 15px;
     padding-top: 10px;
 }
-.btn1{
+.button1{
     background-color: black;
     border: 1px solid #f9ca24;
     color: #f9ca24;
     padding: 8px;
     width: 90px;
 }
+.button1 a{
+    text-decoration: none;
+    color: #f9ca24;
+}
+.button1 a:hover{
+    color: white;
+}
+
 .btn2{
     background-color: #f9ca24;
     border: none;
@@ -103,7 +113,7 @@ span{
     width: 90px;
 
 }
-.btn1:hover{
+.button1:hover{
     background-color: #f9ca24;
     color: white;
 }
@@ -262,9 +272,10 @@ html {
 }
 .education_section{
     background-color:rgba(0, 0, 0, 0.952) ;
-    width: 100;
+    width: 100%;
     height: 100vh;
     color: white;
+    
 
 }
 .projects_section{
@@ -375,5 +386,169 @@ html {
     background: yellow;
     transition: 0.3s;
 }
+
+/* Media query for tablets and smaller screens */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .logo {
+        padding: 5px 20px;
+        font-size: 14px;
+    }
+
+    .navbar {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .navbar ul {
+        padding: 0;
+    }
+
+    .navbar ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .home {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .home_image img {
+        width: 250px;
+        height: 250px;
+        margin-top: 50px;
+        margin-right: 0;
+    }
+
+    .home_details {
+        margin: 50px 20px;
+        width: 100%;
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+    }
+
+    .about_image img {
+        width: 250px;
+        height: 350px;
+        margin: 20px auto;
+    }
+
+    .about_details {
+        width: 90%;
+    }
+
+    .about_par {
+        width: 100%;
+    }
+
+    .progress-container {
+        width: 80%;
+    }
+
+    .outer_con {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .inner_con {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    form {
+        margin: 5% 10%;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .contacts_section {
+        height: auto;
+        padding: 30px 0;
+    }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 12px;
+    }
+
+    .navbar ul li {
+        margin: 8px 0;
+    }
+
+    .home {
+        padding: 20px;
+    }
+
+    .home_image img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .home_details {
+        margin: 30px 10px;
+    }
+
+    .button1, .btn2 {
+        width: 80px;
+        padding: 6px;
+    }
+
+    .about {
+        padding: 10px;
+    }
+
+    .about_image img {
+        width: 200px;
+        height: 300px;
+    }
+
+    .about_par {
+        font-size: 14px;
+        width: 90%;
+    }
+
+    .progress-container {
+        width: 100%;
+    }
+
+    .timeline {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .timeline-content {
+        padding: 10px;
+    }
+
+    .projects_section {
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    .footer {
+        position: relative;
+        padding: 15px;
+    }
+}
+
 
 
